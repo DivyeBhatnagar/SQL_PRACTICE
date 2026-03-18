@@ -1,4 +1,4 @@
--- SQL commands for movies database
+--SQL commands
 
 SELECT title
 FROM movies;
@@ -30,3 +30,19 @@ WHERE year NOT BETWEEN 2000 AND 2010;
 SELECT title, year
 FROM movies
 WHERE id <= 5;
+
+SELECT *
+FROM movies
+WHERE title LIKE 'Toy Story%';
+
+SELECT *
+FROM movies
+WHERE director = 'John Lasseter';
+
+SELECT title, director
+FROM movies
+WHERE director != 'John Lasseter';
+
+SELECT *
+FROM movies
+WHERE title LIKE 'WALL-%';
